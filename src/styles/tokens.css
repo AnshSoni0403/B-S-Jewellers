@@ -1,0 +1,74 @@
+/* ------------------------------------------------------------------
+   Design tokens — "Modern Luxe": ivory, champagne gold, blush, emerald.
+   ------------------------------------------------------------------ */
+:root {
+  /* surfaces */
+  --ivory: #fbf7f1;
+  --ivory-2: #f5ede2;
+  --paper: #ffffff;
+  --blush: #f1ebe4;
+  --blush-2: #e7ddd2;
+  --sand: #f3eee7;
+
+  /* ink */
+  --ink: #2b211c;
+  --ink-2: #54453b;
+  --muted: #86746a;
+  --line: rgba(43, 33, 28, 0.12);
+  --line-strong: rgba(43, 33, 28, 0.22);
+
+  /* metals */
+  --gold: #a9834a;
+  --gold-2: #c9a46a;
+  --gold-soft: #e9d6ae;
+  --gold-grad: linear-gradient(135deg, #8c6a35 0%, #c9a46a 45%, #e9d6ae 60%, #b08a4e 100%);
+  --silver: #8e9399;
+  --silver-soft: #e6e8eb;
+
+  /* festive accents */
+  --emerald: #163f37;
+  --emerald-2: #0e2b25;
+  --maroon: #7a2531;
+
+  /* type */
+  --font-display: 'Cormorant Garamond', 'Noto Serif Gujarati', Georgia, serif;
+  --font-body: 'Jost', 'Noto Sans Gujarati', system-ui, -apple-system, sans-serif;
+  --display-weight: 500;
+  --display-tracking: -0.01em;
+  --body-leading: 1.6;
+
+  /* scale */
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-md: 1rem;
+  --fs-lg: 1.125rem;
+  --fs-h3: clamp(1.35rem, 1.1rem + 0.8vw, 1.75rem);
+  --fs-h2: clamp(1.9rem, 1.4rem + 2vw, 3rem);
+  --fs-h1: clamp(2.5rem, 1.6rem + 4vw, 4.75rem);
+
+  /* layout */
+  --container: 1280px;
+  --gutter: clamp(16px, 4vw, 40px);
+  --section: clamp(64px, 9vw, 120px);
+  --radius: 14px;
+  --radius-sm: 8px;
+  --header-h: 128px;
+
+  /* depth */
+  --shadow-sm: 0 1px 2px rgba(43, 33, 28, 0.06), 0 2px 8px rgba(43, 33, 28, 0.04);
+  --shadow-md: 0 10px 30px -12px rgba(43, 33, 28, 0.25);
+  --shadow-lg: 0 30px 60px -24px rgba(43, 33, 28, 0.35);
+
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Gujarati mode: Gujarati-first font stacks, roomier leading for matras. */
+html[lang='gu'] {
+  --font-display: 'Noto Serif Gujarati', 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Noto Sans Gujarati', 'Jost', system-ui, sans-serif;
+  --display-weight: 600;
+  --display-tracking: 0;
+  --body-leading: 1.75;
+  --fs-h1: clamp(2.1rem, 1.4rem + 3.4vw, 4rem);
+  --fs-h2: clamp(1.6rem, 1.2rem + 1.7vw, 2.5rem);
+}
